@@ -1,0 +1,21 @@
+Package: lipidcountr
+Title: Quantify Mass Spectrometric Outputs Of Lipid Spectra
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Christian",
+           family = "Luechtenborg",
+           role = c("aut", "cre"),
+           email = "christian.luechtenborg@googlemail.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: To avoid tedious and error-prone spreadsheet work, like copy&paste,
+             this package helps to quantify intensities of identified lipids 
+             from mass spectra in a safe, fast and reproducible way.
+             It provides different filereader-, evaluation-, visualisation- and 
+             output-functions.
+License: `use_mit_license()`
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+URL: https://github.com/luechtian/lipidcountr
+BugReports: https://github.com/luechtian/lipidcountr/issues
