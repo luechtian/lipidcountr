@@ -15,21 +15,12 @@ knitr::opts_chunk$set(
 
 # lipidcountr
 
-<!-- badges: start -->
-<!-- badges: end -->
-
 The goal of lipidcountr is to streamline and simplify the quantification step of
 the lipidomics workflow in the Bruegger lab.
 
 ## Installation
 
-You can install the released version of lipidcountr from [CRAN](https://CRAN.R-project.org) with:
-
-``` r
-install.packages("lipidcountr")
-```
-
-And the development version from [GitHub](https://github.com/) with:
+You can install lipidcountr from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
@@ -37,25 +28,17 @@ devtools::install_github("luechtian/lipidcountr")
 ```
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
 library(lipidcountr)
-## basic example code
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
 
-```{r cars}
-summary(cars)
+```{r message=FALSE}
+list.files(system.file("extdata", package = "lipidcountr"), pattern = ".txt", full.names = FALSE) %>% head()
 ```
 
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
+```{r message=FALSE}
+read_lipidview_files(system.file("extdata", package = "lipidcountr"))
 ```
 
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub!
